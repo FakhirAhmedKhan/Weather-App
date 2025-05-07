@@ -1,0 +1,164 @@
+body {
+  background-color: #a18585;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f7b5b5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#city {
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#city:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+#city:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #057cfc;
+  color: white;
+  border: none;
+  height: 33px;
+  width: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #003c7c;
+}
+
+button:active {
+  background-color: #004494;
+}
+
+#weather-result {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+#weather-result p {
+  margin: 5px 0;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f7b5b5;
+}
+
+#weather-result h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #007bff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  #city {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+  #weather-result p {
+    font-size: 16px;
+  }
+  #weather-result h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  #city {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+  #weather-result p {
+    font-size: 14px;
+  }
+}
