@@ -3,18 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A beautiful, fast, and accessible weather app."
+    />
     <title>Weather App</title>
+    <link
+      rel="icon"
+      href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2600.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <h1>Weather App</h1>
-      <form id="weather-form">
-        <input type="text" id="city" placeholder="Enter city name" required />
-        <button type="submit">Get weather</button>
-      </form>
-      <div id="weather-result"></div>
+      <main>
+        <form id="weather-form" autocomplete="off">
+          <label for="city" class="visually-hidden">City Name</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Enter city name"
+            required
+            aria-label="City name"
+            autocomplete="off"
+          />
+          <button type="submit" aria-label="Get weather for city">
+            Get weather
+          </button>
+        </form>
+        <div id="weather-result" role="status" aria-live="polite"></div>
+      </main>
     </div>
   </body>
 </html>
